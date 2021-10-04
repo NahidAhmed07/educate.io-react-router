@@ -16,7 +16,7 @@ const About = () => {
       style={{ minHeight: "100vh" }}
     >
       <Container>
-        <h1 className="under-line-text">ABOUTS &nbsp;&nbsp;US</h1>
+        <h2 className="under-line-text">ABOUTS &nbsp;&nbsp;US</h2>
         <hr className='my-5' />
         <Row xs={1} md={2} lg={3} className='g-4'>
           {persons.map((person) => (

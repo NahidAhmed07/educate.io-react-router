@@ -15,5 +15,5 @@
 * Help tp you make a awesome Skilled person. 
 * And Make Your life Easy And Show Your Ceeriar Roadmap;
 
-## Nahid Ahmed (Wanner This Repo and This Website)
+## Nahid Ahmed (owner This Repo and This Website)
 * junior Web Developer in TEAM Rejected .

@@ -17,7 +17,7 @@ const Cart = () => {
     <section className="container-fluid" style={{ minHeight: "100vh" }}>
       <Container>
         {/* Heading  */}
-        <h1 className="py-4">Added Courses</h1>
+        <h2 className="py-4">Added Courses</h2>
         <div className="d-flex justify-content-evenly">
           <h5>Total Added Course : {cart.length}</h5>
           <h5>Total Cost : ${total}</h5>
