@@ -1,7 +1,7 @@
 # Education-Manage-system-Assignment-9
 
 ## Live site link 
- [live site Link](https://developer-points-react-assignment-8.netlify.app/)  : https://developer-points-react-assignment-8.netlify.app/
+ [live site Link](https://education-assignment-9-nahid07.netlify.app/home)  : https://education-assignment-9-nahid07.netlify.app/home
 
 ## Available Scripts
 * React.js 
