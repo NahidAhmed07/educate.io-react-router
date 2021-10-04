@@ -2,37 +2,60 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.pm-color{
+  color: #03B97C;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.pm-bg{
+  background-color: #03B97C !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.bg-theme{
+  background-image: url(http://themesflat.com/html/educate/images/slides/1.jpg);
+  min-height: calc(100vh - 50px);
+  background-position: center;
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
+  background-color: rgba(8, 8, 8, 0.678);
+  color:white; 
+}
+.bg-theme-text{
   display: flex;
   flex-direction: column;
-  align-items: center;
+  min-height: calc(100vh - 50px);
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center ;
+
+}
+
+.under-line-text{
+width: 260px;
+margin: 0 auto;
+position: relative;
+}
+
+.under-line-text::after{
+  content: "";
+  width: 0px;
+  border-bottom: 4px solid #2C91FB;
+  position: absolute;
+  bottom: -7px;
+  left: 0;
+  transition: 0.7s;
+}
+.underline-parent:hover .under-line-text::after{
+  width: 260px;
+}
+.btn-unfill{
+  border: 1px solid #1385ff;
+  color: rgba(46, 46, 46, 0.815);
+  transition: 0.5s;
+  padding: 5px 12px;
+  border-radius: 3px;
+  
+}
+.btn-unfill:hover{
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  background: #238cfd;
 }

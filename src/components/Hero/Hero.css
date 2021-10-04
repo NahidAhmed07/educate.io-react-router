@@ -1,6 +1,6 @@
-.hero-container{
+.hero-container, .not-found{
   background-image: url(http://themesflat.com/html/educate/images/slides/1.jpg);
-  min-height: calc(100vh - 85px);
+  min-height: calc(100vh - 50px);
   background-position: center;
   background-size:cover;
   background-repeat: no-repeat;
@@ -10,10 +10,10 @@
 
 }
 
-.hero-text{
+.hero-text, .not-found-text{
   display: flex;
   flex-direction: column;
-  min-height: calc(100vh - 85px);
+  min-height: calc(100vh - 50px);
   justify-content: center;
   align-items: center ;
 

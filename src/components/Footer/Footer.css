@@ -1,0 +1,14 @@
+
+.footer{
+  background: #2C91FB;
+  
+  padding: 20px;
+  color:white;
+}
+.footer p{
+  margin: 0;
+}
+
+.icon-div i{
+  margin-right: 20px;
+}

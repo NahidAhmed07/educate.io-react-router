@@ -1,24 +1,23 @@
-import React from "react";
-import './Menubar.css'
+import React, { useContext } from "react";
+import "./Menubar.css";
 import { Nav, Navbar } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
+import { CartContext } from "../../App";
 
 const Menubar = () => {
+  const [cart] = useContext(CartContext);
   return (
     <Navbar
-      className="container-fluid px-5 py-0 text-white"
+      className="container-fluid sticky-top px-5 py-0 text-white"
       style={{ backgroundColor: "#2C91FB" }}
       variant="dark"
       expand="lg"
     >
-      <Navbar.Brand href="#">Educate</Navbar.Brand>
+      <Navbar.Brand href="#">Educate.io</Navbar.Brand>
       <Navbar.Toggle aria-controls="navbarScroll" />
       <Navbar.Collapse id="navbarScroll">
-        <Nav
-          className="mx-auto my-2 my-lg-0"
-          style={{ maxHeight: "100px" }}
-          navbarScroll
-        >
+        <Nav className="mx-auto my-2 my-lg-0" navbarScroll>
+          {/* Nav Rout link  */}
           <NavLink
             className="nav-item"
             activeClassName="active-nav-item"
@@ -55,16 +54,18 @@ const Menubar = () => {
           >
             VIEW CART
           </NavLink>
+          {/* navbar icons  */}
         </Nav>
         <div className="d-flex ms-auto my-4 my-md-0">
+          <h4>{cart.length}</h4>
           <div>
-            <i className= "fas fa-shopping-cart me-4 nav-icon"></i>
+            <i className="fas fa-shopping-cart me-4 nav-icon"></i>
           </div>
           <div>
-            <i className= "far fa-bell me-4 nav-icon"></i>
+            <i className="far fa-bell me-4 nav-icon"></i>
           </div>
           <div>
-            <i className= "fas fa-sign-in-alt me-4 nav-icon"></i>
+            <i className="fas fa-sign-in-alt me-4 nav-icon"></i>
           </div>
         </div>
       </Navbar.Collapse>
