@@ -31,7 +31,7 @@ const Cart = () => {
                 onClick={() => removeHandelar(service.id)}
               >
                 {" "}
-                Remove Course
+                Remove
               </button>
             </ServicesItem>
           ))}

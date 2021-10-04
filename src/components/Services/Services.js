@@ -42,7 +42,7 @@ const Services = (props) => {
                       className="btn-unfill"
                       onClick={() => purchesHandelar(service?.id)}
                     >
-                      Purches Course
+                      Purches 
                     </button>
                   </ServicesItem>
                 );

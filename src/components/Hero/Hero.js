@@ -10,7 +10,7 @@ const Hero = () => {
           <Col>
             <div className="hero-text col-lg-6 text-start">
               {/* hero heading  */}
-              <h1 className="display-4 fw-bold">
+              <h1 className="display-3 ">
                 Education is about creating leaders for tomorrow.
               </h1>
               {/* hero text  */}

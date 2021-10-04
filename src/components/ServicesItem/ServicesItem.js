@@ -23,7 +23,7 @@ const ServicesItem = (props) => {
   } = props?.service;
   return (
     <Col>
-      <Card className="text-start h-100 card-main"  style={{width:'21rem'}} >
+      <Card className="text-start h-100 card-main" >
         <Card.Img variant="top" src={courseImg} />
         <Card.Body>
           <div className="d-flex text-black justify-content-between">
@@ -59,7 +59,7 @@ const ServicesItem = (props) => {
 
           {/* Cart button  */}
           <div className="d-flex justify-content-evenly">
-            <button className='btn-fill'> More details...</button>
+            <button className='btn-fill'>  details...</button>
             {props.children}
             
           </div>
