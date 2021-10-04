@@ -30,7 +30,7 @@
 }
 
 .under-line-text{
-width: 260px;
+width: 290px;
 margin: 0 auto;
 position: relative;
 }
@@ -45,7 +45,7 @@ position: relative;
   transition: 0.7s;
 }
 .underline-parent:hover .under-line-text::after{
-  width: 260px;
+  width: 290px;
 }
 .btn-unfill{
   border: 1px solid #1385ff;

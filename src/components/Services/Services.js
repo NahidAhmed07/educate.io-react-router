@@ -28,9 +28,9 @@ const Services = (props) => {
       style={{ backgroundAttachment: "fixed" }}
     >
       <Container className="py-5 underline-parent">
-        <h1 className="mb-5 under-line-text">Our Services</h1>
+        <h2 className="mb-5 under-line-text">Our Services</h2>
 
-        <Row xs={1} md={2} lg={3} className="g-5">
+        <Row xs={1} md={2} lg={3} className="g-3">
           {/* map array for displaying all Services card  */}
           {services.length
             ? array?.map((item) => {
