@@ -1,11 +1,12 @@
 import React, { useContext } from "react";
 import "./Menubar.css";
 import { Nav, Navbar } from "react-bootstrap";
-import { NavLink } from "react-router-dom";
+import { NavLink, useHistory } from "react-router-dom";
 import { CartContext } from "../../App";
 
 const Menubar = () => {
   const [cart] = useContext(CartContext);
+  const history = useHistory();
   return (
     <Navbar
       className="container-fluid sticky-top px-5 py-0 text-white"
@@ -57,10 +58,13 @@ const Menubar = () => {
           {/* navbar icons  */}
         </Nav>
         <div className="d-flex ms-auto my-4 my-md-0">
-          <h4>{cart.length}</h4>
-          <div>
-            <i className="fas fa-shopping-cart me-4 nav-icon"></i>
+          <div class=" position-relative">
+            <i className="fas fa-shopping-cart me-4 nav-icon position-relative"></i>
+            <span class="position-absolute top-0 start-0  translate-middle badge rounded-pill bg-danger">
+              {cart.length}
+            </span>
           </div>
+          
           <div>
             <i className="far fa-bell me-4 nav-icon"></i>
           </div>

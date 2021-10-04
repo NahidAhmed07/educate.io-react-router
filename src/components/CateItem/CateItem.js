@@ -1,5 +1,4 @@
 import React from 'react';
-import img from '../../utilites/icon.png';
 import './CateItem.css'
 
 const CateItem = (props) => {

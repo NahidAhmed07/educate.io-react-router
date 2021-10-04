@@ -15,7 +15,7 @@ const Contact = () => {
               {/* for Address part  */}
               <Col xs={12} className="text-center">
                 <div className="shadow-sm p-3">
-                  <i className="fas fa-2x text-danger fa-map-marker-alt"></i>
+                  <i className="fas fa-2x pm-color fa-map-marker-alt"></i>
                   <h5 className="text-muted my-3">Our Address</h5>
                   <p className="text-muted fs-6">
                     A108 Adam Street, New York, NY 535022
@@ -26,7 +26,7 @@ const Contact = () => {
               <Col xs={6}>
                 <div className="text-center shadow-sm p-3 text-muted">
                   <i
-                    className="fa fa-2x text-danger fa-envelope"
+                    className="fa fa-2x pm-color fa-envelope"
                     aria-hidden="true"
                   ></i>
                   <h5 className="my-2">Email Us</h5>
@@ -37,7 +37,7 @@ const Contact = () => {
               {/* for phone number part  */}
               <Col xs={6}>
                 <div className="text-center shadow-sm text-muted p-3">
-                  <i className="fas fa-2x text-danger fa-phone-volume"></i>
+                  <i className="fas fa-2x pm-color fa-phone-volume"></i>
                   <h5 className="my-2">Call Us</h5>
                   <p className="my-1">+1 5589 55488 55</p>
                   <p className="m-0 "> +1 6678 254445 41</p>
@@ -86,7 +86,7 @@ const Contact = () => {
               </textarea>
               <div className="text-center">
                 {/* submit button  */}
-                <a href="#home" className="btn btn-danger  mt-4 ">
+                <a href="#home" className="btn btn-outline-success  mt-4 ">
                   Send message
                 </a>
               </div>

@@ -18,6 +18,7 @@
 .nav-icon{
   font-size: 22px;
   cursor: pointer;
+  color: #dddddd;
 }
 
 .nav-icon:hover{
