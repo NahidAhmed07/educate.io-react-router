@@ -1,0 +1,25 @@
+.nav-item{
+  text-decoration: none;
+  color: white;
+  margin-right: 20px;
+  padding: 8px 12px;
+  margin: 10px 8px;
+
+}
+.nav-item:hover{
+ color: #e7e7e7;
+}
+.active-nav-item{
+  /* background: #137ef0; */
+  border-bottom: 2px solid rgb(209, 209, 209);
+  color: #e7e7e7;
+}
+
+.nav-icon{
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.nav-icon:hover{
+  color: rgb(207, 207, 207) ;
+}
