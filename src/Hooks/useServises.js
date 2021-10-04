@@ -5,7 +5,7 @@ const useServises = () => {
   useEffect(() => {
     const url =
       "https://raw.githubusercontent.com/NahidAhmed07/api/main/services.json";
-    fetch("/servises.json")
+    fetch(url)
       .then((res) => res.json())
       .then((data) => setServices(data))
       .catch((err) => console.log(err));

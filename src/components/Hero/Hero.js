@@ -8,7 +8,7 @@ const Hero = () => {
       <Container>
         <Row>
           <Col>
-            <div className="hero-text col-lg-5 text-start">
+            <div className="hero-text col-lg-6 text-start">
               {/* hero heading  */}
               <h1 className="display-4 fw-bold">
                 Education is about creating leaders for tomorrow.

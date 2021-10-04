@@ -5,17 +5,25 @@ import CateItem from '../CateItem/CateItem';
 const Categories = () => {
   const [categories, setCategories] = useState([]);
   useEffect(() => {
-    fetch('/categories.json')
-      .then(res => res.json())
-      .then(data => setCategories(data))
-      .catch(err => console.log(err));
-  },[])
+    fetch(
+      "https://raw.githubusercontent.com/NahidAhmed07/api/main/categories.json"
+    )
+      .then((res) => res.json())
+      .then((data) => setCategories(data))
+      .catch((err) => console.log(err));
+  }, [])
+  
   return (
-    <section className="underline-parent py-5">
+    <section className="underline-parent container-fluid py-5">
       <Container>
-        <h1 className="under-line-text mb-4">Categories</h1>
-        <Row xs={1} md={3} lg={4} className='mt-4'>
-          
+        <h1 className="under-line-text my-5 pb-3">Categories</h1>
+        <Row xs={1} md={3} lg={4} className="mt-4 gap-5">
+          {categories.map((categorie) => (
+            <CateItem
+              categorie={categorie}
+              key={categorie.id}
+            ></CateItem>
+          ))}
         </Row>
       </Container>
     </section>

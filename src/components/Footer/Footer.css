@@ -11,4 +11,11 @@
 
 .icon-div i{
   margin-right: 20px;
+  font-size: 28px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.icon-div i:hover{
+  color: rgb(218, 216, 216);
 }
