@@ -15,9 +15,11 @@ const Categories = () => {
   
   return (
     <section className="underline-parent container-fluid py-5">
+
       <Container>
+        <hr />
         <h1 className="under-line-text my-5 pb-3">Categories</h1>
-        <Row xs={1} md={3} lg={4} className="mt-4 gap-5">
+        <Row xs={1} md={2} lg={3} className="mt-4 g-5">
           {categories.map((categorie) => (
             <CateItem
               categorie={categorie}

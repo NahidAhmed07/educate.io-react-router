@@ -58,9 +58,9 @@ const Menubar = () => {
           {/* navbar icons  */}
         </Nav>
         <div className="d-flex ms-auto my-4 my-md-0">
-          <div class=" position-relative">
+          <div className=" position-relative">
             <i className="fas fa-shopping-cart me-4 nav-icon position-relative"></i>
-            <span class="position-absolute top-0 start-0  translate-middle badge rounded-pill bg-danger">
+            <span className="position-absolute top-0 start-0  translate-middle badge rounded-pill bg-danger">
               {cart.length}
             </span>
           </div>

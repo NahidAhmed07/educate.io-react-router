@@ -1,18 +1,16 @@
-
 import React, { useContext } from "react";
-import { Container, Row, Button } from "react-bootstrap";
+import { Container, Row, Button, Col } from "react-bootstrap";
 import { CartContext } from "../../App";
 import ServicesItem from "../ServicesItem/ServicesItem";
 import { addToDataBase, getDB } from "../../utilites/dataBase";
 import useServises from "../../Hooks/useServises";
-
+import { NavLink } from "react-router-dom";
 
 const Services = (props) => {
   const [cart, setCart] = useContext(CartContext);
   const [services] = useServises();
- 
-  const { array } = props;
 
+  const { array } = props;
 
   const purchesHandelar = (id) => {
     const keys = Object.keys(getDB());
@@ -25,9 +23,12 @@ const Services = (props) => {
   };
 
   return (
-    <section className=" container-fluid" style={{ backgroundAttachment: "fixed" }}>
+    <section
+      className=" container-fluid"
+      style={{ backgroundAttachment: "fixed" }}
+    >
       <Container className="py-5 underline-parent">
-        <h1 className="mb-5 under-line-text">Our Services</h1> 
+        <h1 className="mb-5 under-line-text">Our Services</h1>
 
         <Row xs={1} md={2} lg={3} className="g-5">
           {/* map array for displaying all Services card  */}
@@ -38,7 +39,7 @@ const Services = (props) => {
                   <ServicesItem service={service} key={service?.id}>
                     {/* child buttton  */}
                     <button
-                      className='btn-unfill'
+                      className="btn-unfill"
                       onClick={() => purchesHandelar(service?.id)}
                     >
                       Purches Course
@@ -47,6 +48,14 @@ const Services = (props) => {
                 );
               })
             : ""}
+
+          <Col>
+            <div className="d-flex h-100 align-items-end">
+              <NavLink to="/services">
+                <button className='btn-fill mb-3'>See more...</button>
+              </NavLink>
+            </div>
+          </Col>
         </Row>
       </Container>
     </section>

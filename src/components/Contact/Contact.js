@@ -47,7 +47,7 @@ const Contact = () => {
           </Col>
           {/* contact form start here  */}
           <Col xs={12} lg={6} className="shadow-sm">
-            <form action="">
+            <div>
               <Row>
                 {/* name Field  */}
                 <Col>
@@ -79,8 +79,8 @@ const Contact = () => {
               <textarea
                 className="form-control"
                 placeholder="Comment text."
-                              rows="4"
-                              value=""
+                rows="4"
+                
               >
                 Message
               </textarea>
@@ -90,7 +90,7 @@ const Contact = () => {
                   Send message
                 </a>
               </div>
-            </form>
+            </div>
           </Col>
           {/* contact form end here  */}
         </Row>

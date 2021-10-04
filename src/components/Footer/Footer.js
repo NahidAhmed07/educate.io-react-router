@@ -14,7 +14,7 @@ const Footer = () => {
             <h4 className="border-end pe-4 me-4">Educate.io</h4>
             <p>All &copy;copyRight Reverse </p>
           </div>
-          <div className="icon-div">
+          <div className="icon-div d-none d-md-block">
             <i className="fab fa-facebook-square"></i>
             <i className="fab fa-twitter-square"></i>
             <i className="fab fa-linkedin"></i>
