@@ -12,11 +12,11 @@ const Services = (props) => {
 
   const { array } = props;
 
-  const purchesHandelar = (id) => {
+  const purchesHandelar = (service) => {
     const keys = Object.keys(getDB());
-    if (!keys.includes(id)) {
-      addToDataBase(id);
-      setCart([...cart, props.service]);
+    if (!keys.includes(service.id)) {
+      addToDataBase(service.id);
+      setCart([...cart,service]);
     } else {
       alert("Course alreday added");
     }
@@ -32,7 +32,7 @@ const Services = (props) => {
 
         <Row xs={1} md={2} lg={3} className="g-3">
           {/* map array for displaying all Services card  */}
-          {services.length
+          {(services.length > 0)
             ? array?.map((item) => {
                 const service = services[item];
                 return (
@@ -40,7 +40,7 @@ const Services = (props) => {
                     {/* child buttton  */}
                     <button
                       className="btn-unfill"
-                      onClick={() => purchesHandelar(service?.id)}
+                      onClick={() => purchesHandelar(service)}
                     >
                       Purches 
                     </button>

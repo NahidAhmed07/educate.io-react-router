@@ -22,7 +22,7 @@ function App() {
   const [services] = useServises();
   
   useEffect(() => {
-    if (services.length) {
+    if (services.length > 0) {
       const cartKey = Object.keys(getDB());
       let newCart = [];
       for (const key of cartKey) {

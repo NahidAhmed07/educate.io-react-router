@@ -19,22 +19,25 @@ const Cart = () => {
         {/* Heading  */}
         <h2 className="py-4">Added Courses</h2>
         <div className="d-flex justify-content-evenly">
-          <h5>Total Added Course : {cart.length}</h5>
+          <h5>Total Added Course : {cart?.length}</h5>
           <h5>Total Cost : ${total}</h5>
         </div>
         <hr className="mb-4" />
         <Row xs={1} md={2} lg={3} className="g-5 pb-5">
-          {cart.map((service) => (
-            <ServicesItem service={service} key={service.id}>
+          {
+            (cart.length > 0) ?
+              cart?.map((service) => (
+                
+            <ServicesItem service={service} key={service?.id}>
               <button
                 className="btn-unfill"
-                onClick={() => removeHandelar(service.id)}
+                onClick={() => removeHandelar(service?.id)}
               >
-                {" "}
+                
                 Remove
               </button>
             </ServicesItem>
-          ))}
+          )):" "}
         </Row>
       </Container>
     </section>
